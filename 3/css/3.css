@@ -1,0 +1,38 @@
+/* 
+  Override inherited styling to:
+  1. Make body 
+      * background: white
+  2. Set <li>
+      * font-family: sans-serif
+  3. Remove strikethrough on all links
+      * text-decoration: none
+  4. Set MySpace link to
+      * font-size: 1em
+      * text-transform: none
+*/ 
+
+/*In-line, ID, Class, Element*/
+
+html body {
+  background: white;
+}
+
+li {
+  font-family: sans-serif;
+}
+
+/*strikethrough is coming from .social found using inspect element*/
+.social {
+   text-decoration: none;
+}
+
+/*underline is coming from <a></a> found using inspect element*/
+a {
+  text-decoration: none;
+}
+
+/*font size & caps coming from li #my-space found using inspect element*/
+li #my-space {
+  font-size: 1em;
+  text-transform: none;
+}
